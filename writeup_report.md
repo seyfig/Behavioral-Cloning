@@ -114,25 +114,36 @@ The number of epochs is 50, however, at every epoch weights are saved.
 I started with the Udacity data. Two examples of center lane driving:
 
 ![Udacity Plot](https://github.com/seyfig/BehavioralCloning/blob/master/img/plot1.jpg)
+
+
 ![Udacity 1](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2016_12_01_13_32_54_976.jpg)
+
+
 ![Udacity 2](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2016_12_01_13_33_43_391.jpg)
 
 I then recorded the vehicle when it is driving in autonomous mode.
 
 ![Autonomous Plot](https://github.com/seyfig/BehavioralCloning/blob/master/img/plot2.jpg)
+
 ![Autonomous 1](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2017_02_13_01_15_17_771.jpg)
+
 ![Autonomous 2](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2017_02_13_01_15_18_143.jpg)
+
 
 Then I recorded recovery data.
 
 ![Recovery Plot](https://github.com/seyfig/BehavioralCloning/blob/master/img/plot3.jpg)
+
 ![Recovery Data](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2017_02_13_15_32_00_921.jpg)
+
 ![Recovery Data](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2017_02_13_15_32_10_175.jpg)
 
 Then I repeated this process on last minute recoveries.
 
 ![Extreme Recovery Plot](https://github.com/seyfig/BehavioralCloning/blob/master/img/plot4.jpg)
+
 ![Extreme Recovery Data](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2017_02_13_19_25_46_253.jpg)
+
 ![Extreme Recovery Data](https://github.com/seyfig/BehavioralCloning/blob/master/img/center_2017_02_13_19_27_14_412.jpg)
 
 After the collection process, I had 23815 number of data points. I then preprocessed this data by cropping the first 54 rows images to have 106 x 320 image resolution. Then normalized by dividing by 127.5 and subtracting 1. I finally randomly shuffled the data set and put 20% of the data into a validation set.
@@ -143,14 +154,22 @@ I used this training data for training the model. The validation set helped dete
 ## Results
 The result drivings are listed here
 
+
 First Track Clockwise
+
 [![First Track Clockwise](http://img.youtube.com/vi/z3jbYoWCE9M/0.jpg)](http://www.youtube.com/watch?v=z3jbYoWCE9M)
 
+
 First Track Counter-Clockwise
+
 [![First Track Counter-Clockwise](http://img.youtube.com/vi/ydXteT1jcYA/0.jpg)](http://www.youtube.com/watch?v=ydXteT1jcYA)
 
+
 Second Track Clockwise
+
 [![Second Track Clockwise](http://img.youtube.com/vi/cSlGYXtiG3U/0.jpg)](http://www.youtube.com/watch?v=cSlGYXtiG3U)
 
+
 Second Track Counter-Clockwise
+
 [![Second Track Counter-Clockwise](http://img.youtube.com/vi/ECsnXxHFP58/0.jpg)](http://www.youtube.com/watch?v=ECsnXxHFP58)
